@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">trackcer</string>
+    <string name="title_activity_main">trackcer</string>
+    <string name="package_name">com.trackcer.app</string>
+    <string name="custom_url_scheme">com.trackcer.app</string>
+</resources>

@@ -1,0 +1,1 @@
+import{a as o}from"./vendor--ALJc334.js";function a(e=768){const[s,n]=o.useState(void 0);return o.useEffect(()=>{const t=window.matchMedia(`(max-width: ${e-1}px)`),i=()=>{n(window.innerWidth<e)};return t.addEventListener("change",i),n(window.innerWidth<e),()=>t.removeEventListener("change",i)},[e]),!!s}export{a as u};

@@ -1,0 +1,9 @@
+{
+  "appId": "com.trackcer.app",
+  "appName": "trackcer",
+  "webDir": "public",
+  "server": {
+    "url": "https://www.trackcer.com",
+    "cleartext": true
+  }
+}

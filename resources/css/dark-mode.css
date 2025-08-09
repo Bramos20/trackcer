@@ -1,0 +1,342 @@
+/* Light mode variables */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --text-muted-color: #6c757d;
+    --card-bg: #f8f9fa;
+    --border-color: #dee2e6;
+    --navbar-bg: #ffffff;
+    --input-bg: #ffffff;
+    --input-border: #ced4da;
+
+    --background: white;
+    --text-color: black;
+    --sidebar-bg: #ffffff;
+    --sidebar-border: #e5e7eb;
+    --sidebar-item-hover: #f3f4f6;
+    --sidebar-text-primary: #1a1a1a;
+    --sidebar-text-secondary: #6b7280;
+    --sidebar-icon-bg: #f3f4f6;
+    --sidebar-button-bg: #1a1a1a;
+    --sidebar-button-hover: #2d2d2d;
+}
+
+/* Dark mode variables */
+.dark {
+    --background-color: #121212;
+    --text-color: #e4e6eb;
+    --text-muted-color: #adb5bd;
+    --card-bg: #242526;
+    --border-color: #3a3b3c;
+    --navbar-bg: #1c1e21;
+    --input-bg: #3a3b3c;
+    --input-border: #4e4f50;
+
+    --background: #121212;
+    --text-color: white;
+    --sidebar-bg: #0f172a;
+    --sidebar-border: #1f2937;
+    --sidebar-item-hover: #1f2937;
+    --sidebar-text-primary: #f9fafb;
+    --sidebar-text-secondary: #9ca3af;
+    --sidebar-icon-bg: #1f2937;
+    --sidebar-button-bg: #775AFF;
+    --sidebar-button-hover: #6A4BFB;
+}
+
+/* Apply base styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode body */
+.dark body {
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+/* Text muted style override */
+.dark .text-muted {
+    color: var(--text-muted-color) !important;
+}
+
+/* Navbar styles */
+.dark .navbar-light {
+    background-color: var(--navbar-bg) !important;
+}
+
+.dark .navbar-light .navbar-brand,
+.dark .navbar-light .navbar-nav .nav-link,
+.dark .navbar-text {
+    color: var(--text-color) !important;
+}
+
+/* Card, alert, and container styles */
+.dark .card,
+.dark .modal-content,
+.dark .list-group-item,
+.dark .alert,
+.dark .dropdown-menu {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+    border-color: var(--border-color) !important;
+}
+
+/* Common Bootstrap background overrides */
+.dark .bg-white,
+.dark .bg-light {
+    background-color: var(--card-bg) !important;
+}
+
+/* Text color overrides */
+.dark .text-dark {
+    color: var(--text-color) !important;
+}
+
+/* Form control styling */
+.dark .form-control,
+.dark .input-group-text,
+.dark select.form-select {
+    background-color: var(--input-bg) !important;
+    border-color: var(--input-border) !important;
+    color: var(--text-color) !important;
+}
+
+.dark .form-control:focus {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border-color: #775AFF;
+    box-shadow: 0 0 0 0.25rem rgba(119, 90, 255, 0.25);
+}
+
+/* Button styles */
+.dark .btn-light,
+.dark .btn-outline-secondary {
+    background-color: var(--input-bg) !important;
+    border-color: var(--input-border) !important;
+    color: var(--text-color) !important;
+}
+
+/* Table styles */
+.dark .table {
+    color: var(--text-color) !important;
+}
+
+.dark .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.dark .table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.075) !important;
+}
+
+/* Border color overrides */
+.dark .border,
+.dark .border-top,
+.dark .border-end,
+.dark .border-bottom,
+.dark .border-start {
+    border-color: var(--border-color) !important;
+}
+
+/* Horizontal rules */
+.dark hr {
+    border-color: var(--border-color) !important;
+}
+
+/* Link styles */
+.dark a:not(.btn):not(.nav-link):not(.navbar-brand) {
+    color: #775AFF !important;
+}
+
+.dark a:not(.btn):not(.nav-link):not(.navbar-brand):hover {
+    color: #9B7DFF !important;
+}
+
+/* Theme toggle button icons */
+/* Icon toggle functionality */
+.dark #theme-toggle-dark-icon {
+    display: none;
+}
+
+.dark #theme-toggle-light-icon {
+    display: inline-block;
+}
+
+#theme-toggle-dark-icon {
+    display: inline-block;
+}
+
+#theme-toggle-light-icon {
+    display: none;
+}
+
+/* Shadow effects */
+.dark .shadow,
+.dark .shadow-sm,
+.dark .shadow-lg {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Placeholder text */
+.dark ::placeholder {
+    color: #9ca3af !important;
+}
+
+/* Dropdown items */
+.dark .dropdown-item:hover,
+.dark .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Badge overrides */
+.dark .badge.bg-secondary,
+.dark .badge.bg-light {
+    background-color: var(--input-bg) !important;
+    color: var(--text-color) !important;
+}
+
+/* Alert overrides for different colors */
+.dark .alert-info {
+    background-color: #0d3251 !important;
+    border-color: #0c5460 !important;
+    color: #d1ecf1 !important;
+}
+
+.dark .alert-success {
+    background-color: #0f5132 !important;
+    border-color: #155724 !important;
+    color: #d4edda !important;
+}
+
+.dark .alert-warning {
+    background-color: #664d03 !important;
+    border-color: #856404 !important;
+    color: #fff3cd !important;
+}
+
+.dark .alert-danger {
+    background-color: #58151c !important;
+    border-color: #721c24 !important;
+    color: #f8d7da !important;
+}
+
+/* Focus styles for dark mode */
+.dark *:focus {
+    box-shadow: 0 0 0 0.25rem rgba(119, 90, 255, 0.5) !important;
+}
+
+/* Transition for all changed properties */
+body,
+.navbar,
+.card,
+.form-control,
+.btn,
+.alert,
+.modal-content,
+.dropdown-menu,
+.list-group-item,
+.badge {
+    transition: background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Fix specifically for bg-transparent elements in dark mode */
+.dark .bg-transparent,
+.dark .table.bg-transparent,
+.dark .table.table-borderless.bg-transparent,
+.dark *[class*="bg-transparent"] {
+    color: var(--text-color) !important;
+}
+
+/* Target all child elements of bg-transparent containers */
+.dark .bg-transparent *,
+.dark .table.bg-transparent *,
+.dark .table.table-borderless.bg-transparent *,
+.dark *[class*="bg-transparent"] * {
+    color: var(--text-color) !important;
+}
+
+/* Specifically target table cells within bg-transparent tables */
+.dark .table.bg-transparent th,
+.dark .table.bg-transparent td,
+.dark .table.table-borderless.bg-transparent th,
+.dark .table.table-borderless.bg-transparent td {
+    color: var(--text-color) !important;
+}
+
+/* Fix for any elements that might have both bg-transparent and text-dark classes */
+.dark .bg-transparent.text-dark,
+.dark .text-dark.bg-transparent {
+    color: var(--text-color) !important;
+}
+
+/* Dark mode sidebar specific styles */
+.dark .sidebar {
+    background-color: var(--sidebar-bg);
+    border-right-color: var(--sidebar-border);
+}
+
+.dark .sidebar-collapse-toggle {
+    background-color: var(--sidebar-item-hover);
+    border-color: var(--sidebar-border);
+    color: var(--sidebar-text-primary);
+}
+
+.dark .sidebar-org-icon,
+.dark .sidebar-org-text,
+.dark .sidebar-user-name {
+    color: var(--sidebar-text-primary);
+}
+
+.dark .sidebar-create-btn {
+    background-color: var(--sidebar-button-bg);
+    color: var(--sidebar-text-primary);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.dark .sidebar-create-btn:hover {
+    background-color: var(--sidebar-button-hover);
+}
+
+.dark .sidebar-nav-item {
+    color: var(--sidebar-text-secondary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark .sidebar-nav-item:hover,
+.dark .sidebar-nav-item.active,
+.dark .sidebar-settings-link:hover {
+    background-color: var(--sidebar-item-hover);
+    color: var(--sidebar-text-primary);
+}
+
+.dark .sidebar-settings-link {
+    color: var(--sidebar-text-secondary);
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.dark .sidebar-logout-btn:hover {
+    background-color: var(--sidebar-item-hover);
+}
+
+.dark .sidebar-divider,
+.dark .sidebar-footer,
+.dark .sidebar-org {
+    border-color: var(--sidebar-border);
+}
+
+.dark .sidebar-user:hover {
+    background-color: var(--sidebar-item-hover);
+}
+
+.dark .sidebar-user-avatar {
+    background-color: var(--sidebar-item-hover);
+}
+
+

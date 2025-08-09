@@ -1,0 +1,6 @@
+<svg width="355" height="215" viewBox="0 0 355 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-70.5" y="-70.5" width="496" height="356"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(35.25px);clip-path:url(#bgblur_0_44_8572_clip_path);height:100%;width:100%"></div></foreignObject><path data-figma-bg-blur-radius="70.5" d="M0 175V40C0 17.9086 17.9086 0 40 0H267.607C279.198 0 288.594 9.39577 288.594 20.9861C288.594 32.5763 297.989 41.9721 309.58 41.9721H321.797C340.134 41.9721 355 56.8377 355 75.1754V175C355 197.091 337.091 215 315 215H40C17.9086 215 0 197.091 0 175Z" fill="#F2F2F2"/>
+<defs>
+<clipPath id="bgblur_0_44_8572_clip_path" transform="translate(70.5 70.5)"><path d="M0 175V40C0 17.9086 17.9086 0 40 0H267.607C279.198 0 288.594 9.39577 288.594 20.9861C288.594 32.5763 297.989 41.9721 309.58 41.9721H321.797C340.134 41.9721 355 56.8377 355 75.1754V175C355 197.091 337.091 215 315 215H40C17.9086 215 0 197.091 0 175Z"/>
+</clipPath></defs>
+</svg>

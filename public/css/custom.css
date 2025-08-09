@@ -1,0 +1,140 @@
+/* Global Dark Theme */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1f1f1f !important;
+    border-bottom: 1px solid #333;
+}
+
+.navbar-brand img {
+    filter: brightness(1.2);
+}
+
+.nav-link {
+    color: #d1d1d1 !important;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #1db954 !important;
+}
+
+/* Floating Sidebar */
+.floating-navbar {
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    background-color: #1f1f1f;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    padding: 1rem;
+    width: 200px;
+    z-index: 1030;
+}
+
+.floating-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.floating-navbar li {
+    margin-bottom: 16px;
+}
+
+.floating-navbar a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.floating-navbar a i {
+    margin-right: 10px;
+}
+
+.floating-navbar li.active a,
+.floating-navbar a:hover {
+    color: #1db954;
+    transform: translateX(4px);
+}
+
+/* Cards */
+.card {
+    background-color: #1e1e1e;
+    border-radius: 1rem !important;
+    border: none !important;
+    color: #f0f0f0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-primary,
+.btn-success {
+    background-color: #1db954;
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    background-color: #1ed760;
+}
+
+/* Track List Items */
+.list-group-item {
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+    border: none !important;
+    border-radius: 12px !important;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #333;
+}
+
+/* Audio Player */
+audio {
+    filter: brightness(1.1);
+    background-color: #222;
+    border-radius: 6px;
+}
+
+/* Recommended Tracks */
+.card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* Producer List Links */
+.list-group-item a {
+    color: #1db954 !important;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h5 {
+    color: #ffffff;
+}
+
+.text-muted {
+    color: #aaa !important;
+}
