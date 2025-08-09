@@ -12,6 +12,13 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // Add the missing column first
+        Schema::table('listening_history', function (Blueprint $table) {
+            if (!Schema::hasColumn('listening_history', 'fetch_session_id')) {
+                $table->string('fetch_session_id')->nullable()->after('source');
+            }
+        });
+
         // Since columns already exist, just handle indexes
         
         // Try to drop the unique constraint using raw SQL
@@ -92,5 +99,12 @@ return new class extends Migration
         } catch (\Exception $e) {
             \Log::warning('Could not restore unique constraint: ' . $e->getMessage());
         }
+
+        // Drop the column we added
+        Schema::table('listening_history', function (Blueprint $table) {
+            if (Schema::hasColumn('listening_history', 'fetch_session_id')) {
+                $table->dropColumn('fetch_session_id');
+            }
+        });
     }
 };
